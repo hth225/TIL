@@ -28,6 +28,7 @@ public class BlockHeader
         tmpStr += merkleRootHash;
         return tmpStr.getBytes(StandardCharsets.UTF_8);
     }
+
     private int someMethod(Object[] transactions)
     {
         // 머클 루트 해시값 계산 로직 생략
