@@ -28,4 +28,4 @@
 
 - 블록 해시값은 SHA-256 알고리즘을 사용해 두 번 해싱하여 얻어지게 됨(Double SHA-256 Algorithm)
 
-> 작성된 코드 : JAVA
+> 작성한 코드 : [JAVA](https://github.com/hth225/TIL/tree/master/BlockChain/codes/src), [Python](https://github.com/hth225/TIL/tree/master/BlockChain/python_codes)
