@@ -1,6 +1,7 @@
-# Today I Learned
-오늘 배운 것들을 아래의 규칙으로 commit 함
+# BlockChain
+블록체인 기술에 대한 정리와 코드 구현등을 기록
 
-## 작성 규칙
-- 모든 파일또는 폴더명은 영어로 한다
-- 문서 생성은 [GFM (Github Flavored Markdown)](https://help.github.com/articles/github-flavored-markdown/)을 사용한다.
+## Index
+1. [블록체인의 정의](Definition-BlockChain.md)
+2. [블록의 데이터 구조](Data-structure.md)
+3. [dApp(Decentralized)아키텍쳐의 이해](dApp-architecture.md)
