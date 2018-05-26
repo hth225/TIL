@@ -28,11 +28,23 @@ contract Ballot
     //동적으로 크기가 지정된 'Proposal' 구조체의 배열
     Proposal[] public proposals;
 
-    /// 'proposalNames 중 하나를 선택하기 위한 새로운 투표권 생성해야 함
-    // funciton Ballot(bytes32[] proposalNames) public
-    // {
-    //     chairperson = msg.sender;
-    //     voters[chairperson].weight = 1;
+    // 'proposalNames 중 하나를 선택하기 위한 새로운 투표권 생성해야 함
+    function Ballot(bytes32[] proposalNames) public
+    {
+        chairperson = msg.sender;
+        voters[chairperson].weight = 1;
 
-    // }
+        //각각의 제공된 제안서 이름에 대해, 
+        //새로운 제안서 개체를 만들어 배열 끝에 추가합니다.
+        for (uint i = 0; i < proposalNames.length; i++)
+        {
+            // `proposla({ ... }) 이 비어있는 temporary를 만듬
+            // Proposla 오브젝트와 `Proposals.push(...)`는
+            // `proposals`의 끝부분에 추가합니다
+            proposals.push(Proposal({
+                name : proposalNames[i],
+                voteCount: 0
+            }));
+        }
+    }
 }
