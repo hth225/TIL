@@ -54,7 +54,11 @@ function checkGuess()
 
 //guessSubmit 버튼의 이벤트를 추가하는 과정
 //addEventListner 메소드 안에서는 함수의 괄호가 필요하지 않음.
-guessSubmit.addEventListener('click', checkGuess);
+if (guessSubmit)
+{
+    guessSubmit.addEventListener('click', checkGuess);
+}
+
 
 function setGameOver()
 {
