@@ -35,3 +35,10 @@
 > &quot; -> "
 > &apos; -> '
 
+## Definition of HEAD tag
+- 어떤 내용을 담고 있는가에 대한 정보
+
+#### 메타 데이터
+- 데이터를 설명하는 데이터
+- HEAD tag 아랫쪽에 들어감
+- e.g. 어떤 favicon을 쓰는가, 어떤 JS를 쓰는가에 대해
