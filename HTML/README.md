@@ -30,7 +30,7 @@
 - 브라우저에 의해 해석되기 때문에 표시하기 위해서는 escaping을 사용
 
 ### 코드 리스트
-![Image](Escaping_code.png)
+![Image](img/Escaping_code.png)
 
 ## Definition of HEAD tag
 - 어떤 내용을 담고 있는가에 대한 정보
