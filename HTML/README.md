@@ -58,4 +58,6 @@
 - type = text를 사용해야 필드가 됨
 - name = 선택한 데이터의 이름
 - value = 데이터의 값, 입력한 데이터의 기본 값으로 이 값이 기본적으로 필드에 표시됨
-- 
+- disabled = 값으로 disabled를 지정하면 텍스트 필드가 불능상태로 됨
+- readonly = 값으로 readonly를 지정하면 값이 입력되지 않음, 서버로는 데이터가 전송됨
+- [예제](Ex_textfield.html)
