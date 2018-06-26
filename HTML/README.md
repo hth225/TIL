@@ -3,12 +3,11 @@
 - 예제를 저장하거나 핵심 내용을 기록.
 
 ## DTD (DOCTYPE)
-- <!DOCTYPE html>
 - DTD (Document Type Definition)
 - 브라우저로 하여금, 문서의 정의를 알림
 
 ## 띄어쓰기
-- &nbsp;
+![space](img/space.png)
 
 ## 목록
 - 연관되어 있는 항목들을 나열할 때 사용
@@ -16,14 +15,7 @@
 - css와 함께 메뉴로도 사용
 - [예제](Ex_chart.html)
 
-순서가 없는 항목
-> <ul>
->   <li>항목</li>
-> </ul>
-순서가 있는 항목
-> <ol>
->   <li>항목</li>
-> </ol>
+![Image](img/List.png)
 
 ## 이스케이핑
 - html 코드를 화면에 표시하기 위해 사용
@@ -56,3 +48,14 @@
 - url 상에 전달한 정보가 표시되지 않음
 - 퍼머링크로 사용될 수 없다
 - 서버사이드에 어떤 명령을 수행할 때 사용(e.g. 데이터의 삭제, 수정, 기록 등)
+
+### 텍스트 필드
+- 사용자로부터 텍스트 입력을 받음
+- 긴 줄의 텍스트로는 textarea 를 사용함
+
+#### syntax
+> &lt;input type="text" name="값의 이름" value="값" disabled="disabled" readonly="readonly"/&gt;
+- type = text를 사용해야 필드가 됨
+- name = 선택한 데이터의 이름
+- value = 데이터의 값, 입력한 데이터의 기본 값으로 이 값이 기본적으로 필드에 표시됨
+- 
