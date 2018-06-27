@@ -78,12 +78,16 @@
 [예제](ex/Ex_textfield.html) / [JSFIDDLE](https://jsfiddle.net/1sp6w2tu/)
 
 #### hidden field
-> e.g. &lt;input type="hidden" name="language" /&gt;
+```html
+e.g. <input type="hidden" name="language" />
+```
 - 화면상에 표시되지 않는 컨트롤
 - 서버상으로 값을 넘겨줘야 하나, 사용자에게 표시할 필요가 없는 경우일때 사용
 
 #### Textarea
-> e.g. &lt;textarea name="값의 이름" rows="행의 수" cols="열의 수"&gt;값&lt;/textarea&gt;
+```html
+<textarea name="값의 이름" rows="행의 수" cols="열의 수">값</textarea>
+```
 - 여러 줄의 텍스트를 입력할때 사용
 
 ## 선택
@@ -109,3 +113,9 @@
 - 다수의 항목중에 다수를 선택할 수 있게 함
 
 ### 체크박스
+```html
+<input type="checkbox" name="값의 이름" value="값">
+```
+- 복수의 항목을 선택할 수 있게 하는 컨트롤
+- name의 이름 끝에 '[]'를 붙이면 서버측에서 이 값을 배열이라고 인지함
+> [예제 파일](ex/Ex_checkbox.html), [JSFIDDLE](https://jsfiddle.net/mfj9b7co/)
