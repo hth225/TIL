@@ -7,26 +7,32 @@
 - 브라우저로 하여금, 문서의 정의를 알림
 
 ## 띄어쓰기
-- &amp;nbsp;
-
+```
+&nbsp;
+```
 ### 표 예제
 [JSFIDDLE](https://jsfiddle.net/bdhLzqe8/1/)
 
 ## 목록
+![Image](img/List.png)
+
 - 연관되어 있는 항목들을 나열할 때 사용
 - 순서가 없는 항목들은 ul(unordered list), 순서가 없는 항목은 ol(ordered list)를 사용
 - css와 함께 메뉴로도 사용
 - [예제](Ex_ul.html)
-
-![Image](img/List.png)
 
 ## 이스케이핑
 - html 코드를 화면에 표시하기 위해 사용
 - 브라우저에 의해 해석되기 때문에 표시하기 위해서는 escaping을 사용
 
 ### 코드 리스트
-![Image](img/Escaping_code.png)
-
+```
+&amp; = &
+&lt; = <
+&gt; = >
+&guot; = "
+&apos; = '
+```
 ## Definition of HEAD tag
 - 어떤 내용을 담고 있는가에 대한 정보
 
@@ -46,12 +52,12 @@
 #### GET
 - url에 ?로 구분되는 파라미터 형태로 전송
 - 전송할 수 있는 정보가 제한되어 있음
-- 퍼머링크로 사용될 수 있다.
+- [퍼머링크](https://ko.wikipedia.org/wiki/%ED%8D%BC%EB%A8%B8%EB%A7%81%ED%81%AC)로 사용될 수 있다.
 
 #### POST
 - header의 body 형태로 전송
 - url 상에 전달한 정보가 표시되지 않음
-- 퍼머링크로 사용될 수 없다
+- [퍼머링크](https://ko.wikipedia.org/wiki/%ED%8D%BC%EB%A8%B8%EB%A7%81%ED%81%AC)로 사용될 수 없다
 - 서버사이드에 어떤 명령을 수행할 때 사용(e.g. 데이터의 삭제, 수정, 기록 등)
 
 ### 텍스트 필드
@@ -66,4 +72,4 @@
 - disabled = 값으로 disabled를 지정하면 텍스트 필드가 불능상태로 됨
 - readonly = 값으로 readonly를 지정하면 값이 입력되지 않음, 서버로는 데이터가 전송됨
 
-[예제](Ex_textfield.html), [JSFIDDLE](https://jsfiddle.net/1sp6w2tu/)
+[예제](Ex_textfield.html) / [JSFIDDLE](https://jsfiddle.net/1sp6w2tu/)
