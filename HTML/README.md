@@ -62,7 +62,8 @@
 
 ### 텍스트 필드
 - 사용자로부터 텍스트 입력을 받음
-- 긴 줄의 텍스트로는 textarea 를 사용함
+- 긴 줄의 텍스트로는 [textarea](####Textarea) 를 사용함
+- 비밀번호를 입력받을 때의 [예제](./Ex_FormPwd.html)
 
 #### syntax
 > &lt;input type="text" name="값의 이름" value="값" disabled="disabled" readonly="readonly"/&gt;
@@ -71,7 +72,24 @@
 - value = 데이터의 값, 입력한 데이터의 기본 값으로 이 값이 기본적으로 필드에 표시됨
 - disabled = 값으로 disabled를 지정하면 텍스트 필드가 불능상태로 됨
 - readonly = 값으로 readonly를 지정하면 값이 입력되지 않음, 서버로는 데이터가 전송됨
-- 비밀번호를 입력받을 때의 [예제](./Ex_FormPwd.html)
 
 [예제](Ex_textfield.html) / [JSFIDDLE](https://jsfiddle.net/1sp6w2tu/)
 
+#### hidden field
+> e.g. &lt;input type="hidden" name="language" /&gt;
+- 화면상에 표시되지 않는 컨트롤
+- 서버상으로 값을 넘겨줘야 하나, 사용자에게 표시할 필요가 없는 경우일때 사용
+
+#### Textarea
+> e.g. &lt;textarea name="값의 이름" rows="행의 수" cols="열의 수"&gt;값&lt;/textarea&gt;
+- 여러 줄의 텍스트를 입력할때 사용
+
+## 선택
+#### 라디오 버튼
+> &lt;input type="radio" name="값의 이름" value="값" checked="checked"/&gt;
+- 여러개의 항목중 하나만 선택할 수 있도록 제한하는 컨트롤
+[예제]()
+
+#### 콤보박스
+
+#### 체크박스
