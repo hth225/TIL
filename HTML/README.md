@@ -19,7 +19,7 @@
 - 연관되어 있는 항목들을 나열할 때 사용
 - 순서가 없는 항목들은 ul(unordered list), 순서가 없는 항목은 ol(ordered list)를 사용
 - css와 함께 메뉴로도 사용
-- [예제](Ex_ul.html)
+- [예제](ex/Ex_ul.html)
 
 ## 이스케이핑
 - html 코드를 화면에 표시하기 위해 사용
@@ -41,12 +41,12 @@
 - HEAD tag 아랫쪽에 들어감
 - e.g. 어떤 favicon을 쓰는가, 어떤 JS를 쓰는가에 대해
 - 속성을 통해 문서를 설명
-- [예제](Ex_meta.html)
+- [예제](ex/Ex_meta.html)
 
 ## Form
 - 사용자의 데이터를 서버에 전송하는 방법
 - e.g. 사용자의 아이디와 비밀번호를 입력받아야 할 때, 회원가입을 하기 위해 개인정보를 입력받아야 할 때, 파일을 업로드 해야할 때
-- [예제](./Ex_form.html)
+- [예제](ex/Ex_form.html)
 - [JSFIDDLE](https://jsfiddle.net/g5ut8407/)
 
 #### GET
@@ -63,7 +63,7 @@
 ### 텍스트 필드
 - 사용자로부터 텍스트 입력을 받음
 - 긴 줄의 텍스트로는 [textarea](####Textarea) 를 사용함
-- 비밀번호를 입력받을 때의 [예제](./Ex_FormPwd.html)
+- 비밀번호를 입력받을 때의 [예제](ex/Ex_FormPwd.html)
 
 #### syntax
 > &lt;input type="text" name="값의 이름" value="값" disabled="disabled" readonly="readonly"/&gt;
@@ -73,7 +73,7 @@
 - disabled = 값으로 disabled를 지정하면 텍스트 필드가 불능상태로 됨
 - readonly = 값으로 readonly를 지정하면 값이 입력되지 않음, 서버로는 데이터가 전송됨
 
-[예제](Ex_textfield.html) / [JSFIDDLE](https://jsfiddle.net/1sp6w2tu/)
+[예제](ex/Ex_textfield.html) / [JSFIDDLE](https://jsfiddle.net/1sp6w2tu/)
 
 #### hidden field
 > e.g. &lt;input type="hidden" name="language" /&gt;
@@ -88,7 +88,7 @@
 #### 라디오 버튼
 > &lt;input type="radio" name="값의 이름" value="값" checked="checked"/&gt;
 - 여러개의 항목중 하나만 선택할 수 있도록 제한하는 컨트롤
-[예제]()
+[예제](ex/Ex_radioButton.html)
 
 #### 콤보박스
 
