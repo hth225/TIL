@@ -7,13 +7,16 @@
 - 브라우저로 하여금, 문서의 정의를 알림
 
 ## 띄어쓰기
-![space](img/space.png)
+- &amp;nbsp;
+
+### 표 예제
+[JSFIDDLE](https://jsfiddle.net/bdhLzqe8/1/)
 
 ## 목록
 - 연관되어 있는 항목들을 나열할 때 사용
 - 순서가 없는 항목들은 ul(unordered list), 순서가 없는 항목은 ol(ordered list)를 사용
 - css와 함께 메뉴로도 사용
-- [예제](Ex_chart.html)
+- [예제](Ex_ul.html)
 
 ![Image](img/List.png)
 
@@ -38,6 +41,8 @@
 - 사용자의 데이터를 서버에 전송하는 방법
 - e.g. 사용자의 아이디와 비밀번호를 입력받아야 할 때, 회원가입을 하기 위해 개인정보를 입력받아야 할 때, 파일을 업로드 해야할 때
 - [예제](./Ex_form.html)
+- [JSFIDDLE](https://jsfiddle.net/g5ut8407/)
+
 #### GET
 - url에 ?로 구분되는 파라미터 형태로 전송
 - 전송할 수 있는 정보가 제한되어 있음
@@ -61,3 +66,4 @@
 - disabled = 값으로 disabled를 지정하면 텍스트 필드가 불능상태로 됨
 - readonly = 값으로 readonly를 지정하면 값이 입력되지 않음, 서버로는 데이터가 전송됨
 - [예제](Ex_textfield.html)
+- [JSFIDDLE](https://jsfiddle.net/1sp6w2tu/)
