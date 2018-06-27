@@ -66,7 +66,9 @@
 - 비밀번호를 입력받을 때의 [예제](ex/Ex_FormPwd.html)
 
 #### syntax
-> &lt;input type="text" name="값의 이름" value="값" disabled="disabled" readonly="readonly"/&gt;
+```html
+<input type="text" name="값의 이름" value="값" disabled="disabled" readonly="readonly"/>
+```
 - type = text를 사용해야 필드가 됨
 - name = 선택한 데이터의 이름
 - value = 데이터의 값, 입력한 데이터의 기본 값으로 이 값이 기본적으로 필드에 표시됨
@@ -85,11 +87,25 @@
 - 여러 줄의 텍스트를 입력할때 사용
 
 ## 선택
-#### 라디오 버튼
-> &lt;input type="radio" name="값의 이름" value="값" checked="checked"/&gt;
+### 라디오 버튼
+```html
+<input type="radio" name="값의 이름" value="값" checked="checked"/>
+```
 - 여러개의 항목중 하나만 선택할 수 있도록 제한하는 컨트롤
-[예제](ex/Ex_radioButton.html)
 
-#### 콤보박스
+> [예제 파일](ex/Ex_radioButton.html), [JSFIDDLE](https://jsfiddle.net/a0o7svmd/)
 
-#### 체크박스
+
+### 콤보박스
+```html
+<select name="값의 이름" multiple="multiple">
+    <option value="선택될 경우 name의 값이 됨" selected="selected"> 값에 대한 표시값</option>
+    .... option 반복
+</select>
+```
+> [예제 파일](ex/Ex_ComboBox.html), 
+> [JSFIDDLE](https://jsfiddle.net/w2jpeLms/)
+#### multiple ?
+- 다수의 항목중에 다수를 선택할 수 있게 함
+
+### 체크박스
