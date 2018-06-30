@@ -119,3 +119,10 @@ e.g. <input type="hidden" name="language" />
 - 복수의 항목을 선택할 수 있게 하는 컨트롤
 - name의 이름 끝에 '[]'를 붙이면 서버측에서 이 값을 배열이라고 인지함
 > [예제 파일](ex/Ex_checkbox.html), [JSFIDDLE](https://jsfiddle.net/mfj9b7co/)
+
+### 파일 전송
+```html
+<input type="file" name="서버사이드에서 파일을 식별하기 위한 이름">
+```
+- 
+> [예제 파일](ex/Ex_FileUpload.html), [JSFIDDLE]()
