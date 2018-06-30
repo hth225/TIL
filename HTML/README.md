@@ -124,5 +124,5 @@ e.g. <input type="hidden" name="language" />
 ```html
 <input type="file" name="서버사이드에서 파일을 식별하기 위한 이름">
 ```
-- 
+- 파일을 서버로 업로드하기 위함
 > [예제 파일](ex/Ex_FileUpload.html), [JSFIDDLE]()
