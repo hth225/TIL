@@ -125,8 +125,19 @@ e.g. <input type="hidden" name="language" />
 <input type="file" name="서버사이드에서 파일을 식별하기 위한 이름">
 ```
 - 파일을 서버로 업로드하기 위함
-> [예제 파일](ex/Ex_FileUpload.html), [JSFIDDLE]()
+> [예제 파일](ex/Ex_FileUpload.html)
 
 ### URL (Uniform Resource Locator)
-- 전세계적으로 유일무의한 식별자
+- 전세계적으로 유일무이한 식별자
 ![URL](img/url.png)
+
+### 경로(path)
+- 상대경로 : 문서를 기준으로 한 다른 리소스들의 위치정보
+- 절대경로 : 문서의 위치를 가르키는 도메인을 포함한 전체 위치정보
+
+### 검색엔진 최적화(SEO)
+- Search Engine Optimization
+- 검색엔진에 잘 노출될 수 있도록 하는 활동
+> 이미지의 경우 img태그의 alt 속성을 활용해 검색엔진에서 alt를 이용해 검색할 수 있도록 최적화에 기여
+
+> [웹마스터 가이드라인](https://support.google.com/webmasters/answer/35769?hl=ko)
