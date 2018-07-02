@@ -126,3 +126,7 @@ e.g. <input type="hidden" name="language" />
 ```
 - 파일을 서버로 업로드하기 위함
 > [예제 파일](ex/Ex_FileUpload.html), [JSFIDDLE]()
+
+### URL (Uniform Resource Locator)
+- 전세계적으로 유일무의한 식별자
+![URL](img/url.png)
