@@ -58,3 +58,6 @@ a:focus{color: white;}
 - 일부 속성은 상속되지 않음(e.g. 폰트의 color는 상속되나 테두리는 상속되지않음)
 > [예제파일](./src/Ex_Inheritance.html)
 ### Cascading(적용 우선순위)
+> CSS (Cascading Style Sheet)
+- 폭포수형 스타일 시트
+- depth로 우선순위를 지정
