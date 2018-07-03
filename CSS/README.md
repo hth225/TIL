@@ -34,3 +34,6 @@ h1 {color:red; text-decoration:underline;}
 ```
 - 부모 ID에서 직계 자손인 li태그를 선택한 예
 - 직계 자손인 li만 해당 CSS 효과를 받음
+> [예제파일](./src/Ex_ParentChildSelecotr.html)
+#### Selector 관련 게임
+> [CSS DINER](http://flukeout.github.io/)
