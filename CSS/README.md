@@ -37,3 +37,17 @@ h1 {color:red; text-decoration:underline;}
 > [예제파일](./src/Ex_ParentChildSelecotr.html)
 #### Selector 관련 게임
 > [CSS DINER](http://flukeout.github.io/)
+### 가상 클래스 선택자(Pseudo Class Selector)
+```css
+a:link{color: black;}
+a:visited{color: red;}
+a:hover{color: yellow;}
+a:active{color: green;}
+a:focus{color: white;}
+```
+- :link - 방문한 적이 없는 링크
+- :visited – 방문한 적이 있는 링크
+- :hover – 마우스를 롤오버 했을 때
+- :active – 마우스를 클릭했을 때
+- :focus - tab키 또는 input일 경우 입력값을 받는 상태일 때(focus on 상태)
+> [예제파일](./src/Ex_PseudoSel.html)
