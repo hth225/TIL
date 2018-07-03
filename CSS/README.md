@@ -51,3 +51,10 @@ a:focus{color: white;}
 - :active – 마우스를 클릭했을 때
 - :focus - tab키 또는 input일 경우 입력값을 받는 상태일 때(focus on 상태)
 > [예제파일](./src/Ex_PseudoSel.html)
+---
+## 적용순서
+### 상속
+- css에서는 생산성 향상을 위해 기본적으로 상속을 지원함
+- 일부 속성은 상속되지 않음(e.g. 폰트의 color는 상속되나 테두리는 상속되지않음)
+> [예제파일](./src/Ex_Inheritance.html)
+### Cascading(적용 우선순위)
