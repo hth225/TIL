@@ -20,7 +20,7 @@ h1 {color:red; text-decoration:underline;}
 ```
 - h1 은 selector로, 어떤 태그를 선택하였는가를 나타냄
 - 선택한 태그의 CSS효과는 뒤쪽의 {}안에서 선언됨
-> [예제 파일](./src/Ex_SelectorDeclaration.html)
+> [예제파일](./src/Ex_SelectorDeclaration.html)
 ### ID 선택자
 ```css
 #select {color:blue; text-decoration:none;}
@@ -28,3 +28,9 @@ h1 {color:red; text-decoration:underline;}
 - 태그를 선택자로 할 경우 해당하는 모든 태그의 CSS 효과가 바뀌기 때문
 - 원하는 효과를 주고자하는 대상을 ID 속성값을 통하여 구분
 > [예제파일](./src/Ex_IDSelectorDeclaration.html)
+### 부모 자식 선택자
+```css
+#lecture>li {color:white; font-size:10px;}
+```
+- 부모 ID에서 직계 자손인 li태그를 선택한 예
+- 직계 자손인 li만 해당 CSS 효과를 받음
