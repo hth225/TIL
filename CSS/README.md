@@ -5,7 +5,7 @@
 ## 목차
 1. [선택자](#선택자)
 2. [적용 순서](#적용순서)
-3. [서체 다루기](#서체다루기)
+3. [서체 다루기](#서체&nbsp;다루기)
 4. [레이아웃 기본](#레이아웃기본)
 5. [레이아웃 활용](#레이아웃활용)
 6. [그래픽](#그래픽)
@@ -61,3 +61,23 @@ a:focus{color: white;}
 > CSS (Cascading Style Sheet)
 - 폭포수형 스타일 시트
 - depth로 우선순위를 지정
+- [실습](./src/Ex_Cascading.html)
+#### 우선순위
+1. style attribute (스타일 속성)
+2. ID selector
+3. class selector
+4. tag selector
+- 생산성을 위해 좀 더 구체화되어있어야 우선순위가 높다
+- 포괄적이면 우선순위가 낮음
+- !important를 통해 우선순위를 높게 바꿀 수 있다. (좋은 방법은 아님)
+##### syntax
+```css
+#idsel{color:red; !important}
+```
+---
+## 서체&nbsp;다루기
+### 크기 : font-size
+> **px** and **em**, **rem**
+- px : 고정된 크기, 변하지 않음 (e.g. 사용자가 브라우저의 글꼴 크기를 바꾸었을때 px는 바뀌지 않음)
+- em, rem : 상대적인 크기, 사용자가 페이지의 폰트를 가변적으로 변경할 수 있게 할 때
+#### 오늘날에는 rem을 사용함
