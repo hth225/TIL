@@ -173,3 +173,16 @@ width: 120px;
 > [예제파일](./src/Ex_BoxModel.html)
 - margin : element와 element 간의 간격을 조정
 ### Box Sizing
+```css
+*{
+    box-sizing: content-box;
+}
+```
+- content의 크기만큼 width와 height 값이 지정이 된다.
+```css
+*{
+    box-sizing: border-box;
+}
+```
+- border-box의 경우 서로 border의 두께가 다름에도 불구하고 경계의 크기가 같아짐
+### Margin Collapsing
