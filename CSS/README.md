@@ -161,3 +161,4 @@ h1{display: inline;}
 a{display: block;}
 ```
 > 하지만, [다음](./src/Ex_InlineBlock.html)과 같이 css에서 display 속성을 변경할 수 있다
+### BOX MODEL
