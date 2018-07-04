@@ -185,4 +185,7 @@ width: 120px;
 }
 ```
 - border-box의 경우 서로 border의 두께가 다름에도 불구하고 경계의 크기가 같아짐
-### Margin Collapsing
+### Margin Collapsing(마진 겹침)
+![Margin-Collapsing](./img/Margin-collapsing.png)
+- 두 개의 태그 사이의 마진이 서로 겹쳐지는 현상
+- 두 개의 태그 사이에 더 큰 마진값이 간격이 된다
