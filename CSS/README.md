@@ -105,3 +105,35 @@ p{
 #### 많은 양의 텍스트가 필요한 경우, [Lorem Ipsum](https://www.lipsum.com/) 에서 의미없는 텍스트를 가져올 수 있다.
 
 ### 서체
+#### font-family
+```css
+h1{
+    font-family: "Times New Roman", Times, serif;
+}
+```
+- 띄어쓰기가 있는 경우, ""큰따옴표로 묶어준다
+- Times New Roman 폰트가 없을 경우, Times 폰트를 사용하게 됨
+- 마지막 폰트는 포괄적인 폰트로 지정함, [예제](./src/Ex_FontFamily.html)
+  - serif (장식이 있음)
+  - sans-serif (장식이 없음)
+  - cursive
+  - fantasy
+  - monospace (고정폭)
+
+#### line-height
+```css
+#type1{
+    font-size: 2rem;
+    line-height: 3;
+}
+```
+- 자간을 조정
+- px같은 절대적인 길이를 피해 사용(숫자 2와같은 상대적인 수치 사용), [예제](./src/Ex_FontFamily.html)
+
+#### font
+```css
+#type2{
+    font:bold 2rem/2 arial, verdana, "Helvetica Neue", sans-serif
+}
+```
+- 앞서 사용했던 것들을 함축적으로 사용할 수 있게 함, [예제](./src/Ex_FontFamily.html)
