@@ -81,3 +81,27 @@ a:focus{color: white;}
 - px : 고정된 크기, 변하지 않음 (e.g. 사용자가 브라우저의 글꼴 크기를 바꾸었을때 px는 바뀌지 않음)
 - em, rem : 상대적인 크기, 사용자가 페이지의 폰트를 가변적으로 변경할 수 있게 할 때
 #### 오늘날에는 rem을 사용함 ([예제](./src/Ex_Font_size.html))
+
+### 색상 : Color
+1. color name
+2. hex
+3. rgb
+> **이러한 세가지 방식으로 색상을 표시함** **([예제](./src/Ex_color.html))**
+
+### 정렬 : text-align
+```css
+p{
+    text-align: right;
+    text-align: center;
+    text-align: left;
+    text-align: justify;
+}
+```
+1. 오른쪽 정렬
+2. 가운데 정렬
+3. 왼쪽 정렬
+4. 균등하게 정렬(텍스트의 길이가 균등하게 잘림)
+
+#### 많은 양의 텍스트가 필요한 경우, [Lorem Ipsum](https://www.lipsum.com/) 에서 의미없는 텍스트를 가져올 수 있다.
+
+### 서체
