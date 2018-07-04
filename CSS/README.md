@@ -162,3 +162,14 @@ a{display: block;}
 ```
 > 하지만, [다음](./src/Ex_InlineBlock.html)과 같이 css에서 display 속성을 변경할 수 있다
 ### BOX MODEL
+```css
+p{
+border: 10px solid red;
+padding: 20px;
+margin: 40px;
+width: 120px;
+}
+```
+> [예제파일](./src/Ex_BoxModel.html)
+- margin : element와 element 간의 간격을 조정
+### Box Sizing
