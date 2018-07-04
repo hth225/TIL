@@ -137,3 +137,12 @@ h1{
 }
 ```
 - 앞서 사용했던 것들을 함축적으로 사용할 수 있게 함, [예제](./src/Ex_FontFamily.html)
+
+### web font
+> [Google Fonts](https://fonts.google.com/)를 사용해서 폰트를 사용하는 기법
+- 웹에있는 폰트를 사용자가 다운로드하게 해서 폰트를 사용하도록 함
+- 브라우저는 href 링크안에 있는 파일을 다운로드 해서 해석함, [예제](./src/Ex_WebFont.html)
+
+#### Google Fonts에 폰트가 없을 경우
+- [Web Font Generator](https://www.web-font-generator.com/)를 사용해서 파일을 업로드하면 webfont를 만들어줌
+- 샘플파일과 여러 행태의 폰트파일을 만들어줌
