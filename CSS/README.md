@@ -148,4 +148,16 @@ h1{
 - 샘플파일과 여러 행태의 폰트파일을 만들어줌
 ---
 ## 레이아웃&nbsp;기본
-### 인라인VS블록레벨
+### 인라인, 블록레벨 Element
+```html
+<h1>Hello World</h1>
+안녕하세요. <a href="https://www.naver.com">생활코딩</a>입니다.
+```
+- h1 태그와 같은 혼자 화면 전체를 다 쓰는, 개행이 되는 element를 Block Level Element라고 함
+- a 태그 와 같은 개행이 되지않고, 같은 줄에 위치하는 element를 inline element라고 함
+
+```css
+h1{display: inline;}
+a{display: block;}
+```
+> 하지만, [다음](./src/Ex_InlineBlock.html)과 같이 css에서 display 속성을 변경할 수 있다
