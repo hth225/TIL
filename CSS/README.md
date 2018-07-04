@@ -188,4 +188,9 @@ width: 120px;
 ### Margin Collapsing(마진 겹침)
 ![Margin-Collapsing](./img/Margin-collapsing.png)
 - 두 개의 태그 사이의 마진이 서로 겹쳐지는 현상
-- 두 개의 태그 사이에 더 큰 마진값이 간격이 된다
+- 두 개의 태그 사이에 **더 큰 마진값**이 간격이 된다
+
+#### Parent와 Child간의 마진 겹침 현상
+![Margin-Collapsing_parent_child](./img/Margin-Collapsing_parent.png)
+- 부모태그와 자식태그 사이에서 일어날 수 있는 마진 겹침
+- 부모 Element가 **시각적인 요소**가 없는 상태일 때, 부모와 자식 element의 margin값중 **큰 쪽의 값**을 사용하게 된다.
