@@ -5,8 +5,8 @@
 ## 목차
 1. [선택자](#선택자)
 2. [적용 순서](#적용순서)
-3. [서체 다루기](#서체&nbsp;다루기)
-4. [레이아웃 기본](#레이아웃&nbsp;기본)
+3. [서체 다루기](#서체다루기)
+4. [레이아웃 기본](#레이아웃기본)
 5. [레이아웃 활용](#레이아웃활용)
 6. [그래픽](#그래픽)
 7. [유지 보수](#유지보수)
@@ -75,7 +75,7 @@ a:focus{color: white;}
 #idsel{color:red; !important}
 ```
 ---
-## 서체&nbsp;다루기
+## 서체다루기
 ### 크기 : font-size
 > **px** and **em**, **rem**
 - px : 고정된 크기, 변하지 않음 (e.g. 사용자가 브라우저의 글꼴 크기를 바꾸었을때 px는 바뀌지 않음)
@@ -147,7 +147,7 @@ h1{
 - [Web Font Generator](https://www.web-font-generator.com/)를 사용해서 파일을 업로드하면 webfont를 만들어줌
 - 샘플파일과 여러 행태의 폰트파일을 만들어줌
 ---
-## 레이아웃&nbsp;기본
+## 레이아웃기본
 ### 인라인, 블록레벨 Element
 ```html
 <h1>Hello World</h1>
@@ -194,3 +194,6 @@ width: 120px;
 ![Margin-Collapsing_parent_child](./img/Margin-Collapsing_parent.png)
 - 부모태그와 자식태그 사이에서 일어날 수 있는 마진 겹침
 - 부모 Element가 **시각적인 요소**가 없는 상태일 때, 부모와 자식 element의 margin값중 **큰 쪽의 값**을 사용하게 된다.
+
+## Position
+### relative, static
