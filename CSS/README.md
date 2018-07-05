@@ -196,4 +196,20 @@ width: 120px;
 - 부모 Element가 **시각적인 요소**가 없는 상태일 때, 부모와 자식 element의 margin값중 **큰 쪽의 값**을 사용하게 된다.
 
 ## Position
-### relative, static
+### static, relative
+```css
+#me{
+    position: static;
+}
+```
+- 기본적으로, css는 position 값이 static으로 되어 있음
+- static인 경우, 지정한 offset 값을 무시하고 원래 위치해야하는 곳에 정적으로 위치함
+```css
+#me{
+    position: relative;
+    left: 100px;
+    top: 100px;
+}
+```
+- offset을 사용하기 위해서는, position을 relative로 지정해야 함
+- [예제](./src/Ex_Position_1.html)에서는 상대적으로 왼쪽에서 100px, 위쪽에서 100px 이동시킴
