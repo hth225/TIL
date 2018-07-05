@@ -212,4 +212,14 @@ width: 120px;
 }
 ```
 - offset을 사용하기 위해서는, position을 relative로 지정해야 함
-- [예제](./src/Ex_Position_1.html)에서는 상대적으로 왼쪽에서 100px, 위쪽에서 100px 이동시킴
+- [예제](./src/Ex_Position_1.html)에서는 상대적으로 부모element를 기준으로 왼쪽에서 100px, 위쪽에서 100px 이동시킴
+### absolute
+```css
+#me{
+    position: absolute;
+}
+```
+- html element의 위치를 기준으로 함
+- 부모와의 link가 끊기기 때문에, 자신의 크기는 content 크기만해짐
+- position 값이 static이 아닌 부모가 있다면, 그 부모의 위치를 기준으로 위치가 정해짐
+> [예제 파일](./src/Ex_Position_2.html)
