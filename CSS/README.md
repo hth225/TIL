@@ -223,3 +223,13 @@ width: 120px;
 - 부모와의 link가 끊기기 때문에, 자신의 크기는 content 크기만해짐
 - position 값이 static이 아닌 부모가 있다면, 그 부모의 위치를 기준으로 위치가 정해짐
 > [예제 파일](./src/Ex_Position_2.html)
+### fixed
+```css
+#me{
+    position: fixed;
+}
+```
+- 스크롤과 무관하게 고정
+- absolute와 비슷하게 부모와의 link가 끊기기 때문에, 자신의 크기는 content 크기만해짐
+- 부모 element들은 자식을 없는 셈 친다
+> [예제 파일](./src/Ex_Position_3.html)
