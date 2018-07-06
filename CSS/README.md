@@ -238,3 +238,12 @@ width: 120px;
 ### flex?
 - 레이아웃을 코드로써 표현
 - 정렬하고자 하는 아이템들은 컨테이너의 역할을 하는 부모태그가 필요하다
+### Usage
+```css
+.container{
+            display: flex;
+            flex-direction: row;
+}
+```
+- [예제](./src/Ex_Flex_1_basic.html) 에서 볼 수 있듯, display 값을 flex로 준다
+- flex-direction의 default 값은 row이다. row또는 column으로 설정된 부모 container의 영향으로 자식 item들은 block level element와 같은 효과를 얻는다
