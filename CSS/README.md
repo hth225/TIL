@@ -284,3 +284,6 @@ width: 120px;
 ![holyGrail](./img/HolyGrail.png)
 > [예제](./src/Ex_Flex_3_HolyGrail.html)를 참고
 - 레이아웃 구성 형태를 말함
+
+#### 기타 속성들
+> [Flex Playground](https://codepen.io/enxaneta/pen/adLPwv)에서 flex 속성들을 살펴볼 수 있다.
