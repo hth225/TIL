@@ -279,3 +279,8 @@ width: 120px;
 - [예제](./src/Ex_Flex_2_GrowShrink.html) 참고, [영상](https://youtu.be/pgFyqS4oCIc) 참고
 - shrink를 0으로 주면 화면이 작아질 때 item 2 의 부피를 줄여가며 공간분담을 하지 않음
 - 반대로, 1을 주면 작아질 때 공간분담을 함(default)
+
+#### Holy Grail
+![holyGrail](./img/HolyGrail.png)
+> [예제](./src/Ex_Flex_3_HolyGrail.html)를 참고
+- 레이아웃 구성 형태를 말함
