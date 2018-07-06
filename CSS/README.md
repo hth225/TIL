@@ -247,3 +247,35 @@ width: 120px;
 ```
 - [예제](./src/Ex_Flex_1_basic.html) 에서 볼 수 있듯, display 값을 flex로 준다
 - flex-direction의 default 값은 row이다. row또는 column으로 설정된 부모 container의 영향으로 자식 item들은 block level element와 같은 효과를 얻는다
+#### Flex basis
+- flex element의 방향에 해당하는 크기를 지정한다
+- row면 수평(width), column이면 수직(height)
+
+#### Flex Grow
+```css
+.item{
+    flex-grow: 1;
+}
+```
+- 부모 element의 크기를 자식 element가 n/1로 나누어서 크기를 조정함
+
+**특정 element의 grow값을 더 크게하고싶은 경우**
+```css
+.item:nth-child(2){
+    flex-grow: 2;
+}
+```
+- :nth-child() 선택자를 이용해 특정 element를 선택하고 원하는 flex-grow값을 준다.
+- flex-grow값은 다른 값이 1일 때 이 element에만 2를 준다면 이 element는 다른 element의 grow의 2배가 된다.
+- [예제-Grow, Shrink](./src/Ex_Flex_2_GrowShrink.html) 참고
+
+#### Flex Shrink
+```css
+.item:nth-child(2){
+    flex-basis: 300px;
+    flex-shrink: 0;
+}
+```
+- [예제](./src/Ex_Flex_2_GrowShrink.html) 참고, [영상](https://youtu.be/pgFyqS4oCIc) 참고
+- shrink를 0으로 주면 화면이 작아질 때 item 2 의 부피를 줄여가며 공간분담을 하지 않음
+- 반대로, 1을 주면 작아질 때 공간분담을 함(default)
