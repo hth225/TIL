@@ -296,3 +296,28 @@ width: 120px;
 ![Flex](./img/Flex.png)
 - flex-grow, flex-shrink, flex-basis의 축약
 ### 미디어 쿼리 기본
+- 해당하는 장치에 적합한 표현을 할 수 있도록 해주는 기술
+- e.g. 반응형 디자인
+
+#### [Example](./src/Ex_MediaQuery.html)
+```css
+@media (max-width:600px) {
+    body{
+        background-color: green;
+    }
+}
+@media (max-width:500px) {
+    body{
+        background-color: red;
+    }
+}
+@media (min-width:601px) {
+    body{
+        background-color: blue;
+    }
+}
+```
+- width 값이 500px보다 작아졌을 때 body의 color가 red가 되는 코드
+- min-width 일 경우, 최소 500px일 때 라는 뜻 으로 해석됨
+- 모든 cascading의 조건이 같다면, 코드가 나중에 나오는 것이 우선순위가 높아짐
+- 작은 구간이 아래로 위치하도록 해야 함
