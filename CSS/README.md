@@ -287,3 +287,5 @@ width: 120px;
 
 #### 기타 속성들
 > [Flex Playground](https://codepen.io/enxaneta/pen/adLPwv)에서 flex 속성들을 살펴볼 수 있다.
+
+### 미디어 쿼리 기본
