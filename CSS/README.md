@@ -287,5 +287,12 @@ width: 120px;
 
 #### 기타 속성들
 > [Flex Playground](https://codepen.io/enxaneta/pen/adLPwv)에서 flex 속성들을 살펴볼 수 있다.
-
+#### container
+> align-content = align item과 유사하나, 그룹과 그룹사이의 정렬을 결정함
+> align-item = item을 정렬
+#### items
+> align-self = 특정한 것만 예외적으로 값을 주고싶을 때 
+> order = 아이템의 순서를 바꾸고 싶을 때
+![Flex](./img/Flex.png)
+- flex-grow, flex-shrink, flex-basis의 축약
 ### 미디어 쿼리 기본
