@@ -340,3 +340,9 @@ width: 120px;
 - clear 속성을 통해 아래와 같은 결과를 얻을 수 있다
 ![Clear](./img/Clear.png)
 > [Float 예제 파일](./src/Ex_Float.html)
+
+### Float를 활용한 holy grail layout
+- 화면의 크기가 고정되어 있음
+![Float_HGL](./img/Float_HGL.png)
+> [예제 참조](./src/Ex_Flaot_HGL.html)
+
