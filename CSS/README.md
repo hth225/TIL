@@ -346,3 +346,21 @@ width: 120px;
 ![Float_HGL](./img/Float_HGL.png)
 > [예제 참조](./src/Ex_Flaot_HGL.html)
 
+### Multi Column
+```css
+column-count: 2;
+```
+- 문단의 컬럼을 두개로 나누어 줌
+- column-width와 함께 사용할 경우 지정해준 수 만큼의 컬럼만 생기게 됨
+```css
+column-width: 200px;
+```
+- 컬럼의 폭을 200px에 맞춰서 단을 나누어 줌
+```css
+column-span: all;
+```
+- [예제](./src/Ex_MultiColumn.html) 참고
+- column-span의 값을 all로 주게 되면 컬럼에 구애받지 않고 자신의 위치를 찾아감
+---
+## 그래픽
+### 배경(BackGround)
