@@ -331,3 +331,12 @@ width: 120px;
 > [W3school](https://www.w3schools.com/css/css3_mediaqueries.asp)의 media queries 문서 참고
 
 ### Float 기본
+- 글의 본문 안에서 이미지를 삽입할 때 보다 자연스럽게 삽입하는 속성
+- 레이아웃을 잡을때도 사용함
+
+![Float](./img/Float.png)
+- 다음과 같이 글자가 그림을 피해가도록 삽입할 수 있다
+#### floating을 원치 않는 경우
+- clear 속성을 통해 아래와 같은 결과를 얻을 수 있다
+![Clear](./img/Clear.png)
+> [Float 예제 파일](./src/Ex_Float.html)
