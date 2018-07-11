@@ -364,3 +364,33 @@ column-span: all;
 ---
 ## 그래픽
 ### 배경(BackGround)
+```css
+div{
+    font-size: 100px;
+    height: 1000px;
+    border: 5px solid gray;
+    background-color: azure;
+    background-image: url('https://i.imgur.com/20lT9YM.png');
+    background-repeat: no-repeat;
+}
+```
+- [예제](./src/Ex_BackGround_1.html)를 참고
+- background image와 color를 지정해준 예제
+#### repeat
+```css
+div{
+background-repeat: no-repeat;
+background-repeat: repeat-x;
+background-repeat: repeat-y;
+}
+```
+- no-repeat = 반복하고싶지 않을 때
+- -x = X축만 반복
+- -y = y축만 반복
+#### 배경 이미지를 고정
+```css
+div{
+    background-attachment: fixed;
+}
+```
+- div와 텍스트도 스크롤이 되지만 background 이미지는 스크롤이 되지 않음.
