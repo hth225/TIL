@@ -27,19 +27,17 @@
             display: flex;
             
         }
-        @media (max-width:500px){
-            .content{
-                flex-direction: column;
-            }
-        }
+        
         .content nav{
             border-right: 1px solid gray;
             flex-shrink: 0;
         }
+        
         .content aside{
             border-left: 1px solid gray;
             flex-shrink: 0;
         }
+        
         nav, aside{
             flex-basis: 150px;
         }
@@ -52,6 +50,25 @@
         }
         aside{
             order: 2;
+        }
+        @media (max-width:500px){
+            .content{
+                flex-direction: column;
+            }
+            .content nav, .content aside{
+                border: none;
+                flex-basis: auto;
+            }
+            main{
+                order: 0;
+            }
+            nav{
+                order:1;
+            }
+            aside{
+                order: 2;
+                display: none;
+            }
         }
     </style>
 </head>

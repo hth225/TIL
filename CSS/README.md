@@ -323,4 +323,11 @@ width: 120px;
 - 작은 구간이 아래로 위치하도록 해야 함
 
 ### 미디어쿼리 응용
-- [예제]()
+- [예제](./src/Ex_MediaQuery_2.html)에서는, 모바일 환경을 가장하여 페이지를 구성함
+```css
+@media (max-width:500px)
+```
+- 500px 이하로 줄어들었을 때를 조건으로 함
+> [W3school](https://www.w3schools.com/css/css3_mediaqueries.asp)의 media queries 문서 참고
+
+### Float 기본
