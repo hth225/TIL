@@ -394,3 +394,10 @@ div{
 }
 ```
 - div와 텍스트도 스크롤이 되지만 background 이미지는 스크롤이 되지 않음.
+### Filter
+- 어떠한 그래픽 대상에게 여러가지 효과를 줄 수 있는 속성
+- 원본이미지는 유지하면서, 코드를 통해서 효과를 줌
+#### 예제
+- [CSS Filters Playground](http://bennettfeely.com/filters/)
+- [Codepen](https://codepen.io/search/pens?q=Filter&page=1&order=popularity&depth=everything&show_forks=false)
+- [예제 파일](./src/Ex_Filter.html)
