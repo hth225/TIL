@@ -397,7 +397,36 @@ div{
 ### Filter
 - 어떠한 그래픽 대상에게 여러가지 효과를 줄 수 있는 속성
 - 원본이미지는 유지하면서, 코드를 통해서 효과를 줌
+```css
+h1{
+    filter:grayscale(100%) blur(1px);
+}
+```
+- grayscale을 100%주고, blur 효과또한 1px을 h1태그에 준 예제
+
 #### 예제
 - [CSS Filters Playground](http://bennettfeely.com/filters/)
 - [Codepen](https://codepen.io/search/pens?q=Filter&page=1&order=popularity&depth=everything&show_forks=false)
 - [예제 파일](./src/Ex_Filter.html)
+
+### Transform
+- 회전, 크기 조정, 비틀기 등 을 하는 속성
+
+#### 크기를 조정하는 예제
+```css
+h1{
+    background-color: deepskyblue;
+    color: white;
+    display: inline-block;
+    padding: 5px;
+    font-size: 3rem;
+    margin: 100px;
+
+    /* transform:scaleX(1) scaleY(0.5); */
+    transform: scale(0.5,0.5);
+}
+```
+- [예제](./src/Ex_Transform.html)참고
+- h1태그의 transform 속성을 scale(0.5, 0.5)로 주어 50%로 크기가 줄어듦
+- 주석과 그 아래의 코드는 서로 같은 의미
+- **[CodePen](https://codepen.io/vineethtr/pen/XKKEgM)의 예제 참고**
