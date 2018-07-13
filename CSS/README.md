@@ -430,3 +430,20 @@ h1{
 - h1태그의 transform 속성을 scale(0.5, 0.5)로 주어 50%로 크기가 줄어듦
 - 주석과 그 아래의 코드는 서로 같은 의미
 - **[CodePen](https://codepen.io/vineethtr/pen/XKKEgM)의 예제 참고**
+
+### Transition 
+- CSS의 여러가지 속성들의 값이 변경되었을 때 전환을 부드럽게 하는 속성
+```css
+a{
+    font-size: 3rem;
+    display: inline-block;
+
+    /* transition-property:font-size transform;
+    transition-duration: 0.5s; */
+    transition: font-size transform 0.5s;
+    transition: font-size 0.1s, transform 0.5s;
+}
+```
+- 주석과 그 아래의 코드는 같은 의미를 지님
+- transition: font-size 0.1s, transform 0.5s; 와 같이 각 속성별로 transition을 줄 수 있다
+> [예제파일](./src/Ex_Transition_1.html)
