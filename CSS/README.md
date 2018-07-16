@@ -343,6 +343,7 @@ width: 120px;
 
 ### Float를 활용한 holy grail layout
 - 화면의 크기가 고정되어 있음
+
 ![Float_HGL](./img/Float_HGL.png)
 > [예제 참조](./src/Ex_Flaot_HGL.html)
 
@@ -447,3 +448,5 @@ a{
 - 주석과 그 아래의 코드는 같은 의미를 지님
 - transition: font-size 0.1s, transform 0.5s; 와 같이 각 속성별로 transition을 줄 수 있다
 > [예제파일](./src/Ex_Transition_1.html)
+
+#### 심화
