@@ -449,4 +449,20 @@ a{
 - transition: font-size 0.1s, transform 0.5s; 와 같이 각 속성별로 transition을 줄 수 있다
 > [예제파일](./src/Ex_Transition_1.html)
 
-#### 심화
+#### Delay
+- 장면전환 효과가 시작될 때 약간의 시간차를 두고 시작하는 속성
+- [예제](./src/Ex_Transition_2.html)
+
+#### Timing-function
+- 장면전환이 되는 속도를 조정
+- ease in out back 과 같이 css에서 기본적으로 제공하지 않는 기능들은 [Ceaser](https://matthewlein.com/tools/ceaser)에서 코드로 만들어 추가할 수 있다
+- 훨씬 더 자연스러운 효과를 얻을 수 있다
+```html
+<body onload="document.querySelector('body').style.backgroundColor='white';">
+    <div>transition</div>
+</body>
+```
+- 다음과 같이 페이지가 로딩될 때 배경색이 white로 바뀌는 경우, transition 을 통해서 [예제](./src/Ex_Transition_TF.html)과 같이 구현할 수 있다
+---
+## 유지보수
+### link와 import로 한 번에 적용하기
