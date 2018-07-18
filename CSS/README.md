@@ -498,7 +498,7 @@ cleancss -o Minify.min.css Minify.css
 ```
 
 #### Minify 되기 전 [CSS파일](./src/css/Minify.css)
----
+
 ```css
 body{}
 h1{
@@ -506,10 +506,11 @@ h1{
 }
 ```
 #### Minify 된 후 [CSS파일](./src/css/Minify.min.css)
----
+
 ```css
 h1{color:tomato}
 ```
+
 ---
 ## Preprocessor
 ### CSS 뛰어넘기 - Preprocessor
@@ -528,3 +529,10 @@ stylus -w ./css/stylus.styl -o ./css/stylus.css
 ```
 - stylus.styl 파일을 감시하며 변경점이 있을 때 마다 컴파일 하여 stylus.css 파일로 내보냄
 - [Stylus CLI command](http://stylus-lang.com/docs/executable.html)를 참고하여 cli 환경에서 Stylus 컴파일
+---
+## Fontello
+### What is [Fontello](http://fontello.com/)?
+- 웹사이트나 어플리케이션에 이미지를 삽입할수도 있겠으나, 특정한 폰트를 사용해서 화면을 확대해도 이미지가 깨지지 않는 방법
+- 여러 폰트 공급자들의 폰트를 한데 모은 사이트
+- 폰트를 통해 아이콘을 표현할 수 있다
+
