@@ -466,3 +466,17 @@ a{
 ---
 ## 유지보수
 ### link와 import로 한 번에 적용하기
+- 추후에 css를 변경할 때 수많은 코드들을 모두 변경해야 하기 때문에 이 문제를 해결하기 위함
+- 중복을 제거함으로써 유지보수의 편의성 증대
+- 가독성 증대
+#### syntax
+```html
+<link rel="stylesheet" href="./css/style.css">
+```
+- link는 html태그로 css를 로드할 때 [사용](./src/Ex_Link_1.html)
+```css
+@import url("./css/style.css");
+```
+- import는 css안에서 다른 css를 로드할 때 [사용](./src/Ex_Link_2.html)
+
+### 코드 경량화
