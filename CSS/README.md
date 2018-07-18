@@ -536,3 +536,9 @@ stylus -w ./css/stylus.styl -o ./css/stylus.css
 - 여러 폰트 공급자들의 폰트를 한데 모은 사이트
 - 폰트를 통해 아이콘을 표현할 수 있다
 
+### Usage
+1. Fontello 에서 원하는 폰트를 선택
+2. 선택한 폰트를 일괄 다운
+3. demo.html을 참고하여 폰트의 class 명을 참고
+4. html에서 i태그를 사용하여 class 값으로 해당하는 폰트의 class 명을 사용
+
