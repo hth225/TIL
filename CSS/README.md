@@ -479,4 +479,36 @@ a{
 ```
 - import는 css안에서 다른 css를 로드할 때 [사용](./src/Ex_Link_2.html)
 
-### 코드 경량화
+### 코드 경량화(Minify)
+- css의 코드를 경량화 하여 Server-Client 사이의 데이터 이동을 줄임(속도 향상)
+- [Web CSS Minifier tool](https://www.cleancss.com/css-minify/)을 사용하거나 편집기의 확장 프로그램 사용 
+
+> e.g. ES5/ES6 and CSS minifier
+![VS Code Extensions](./img/Minify_VSCODE_Extension.png)
+
+### 예시
+> VS CODE 확장 프로그램을 통해 Minify
+
+![Extensions](./img/Extensions_Min.png)
+
+> Command Line 에서의 Minify (CleanCss)
+
+```cmd
+cleancss -o Minify.min.css Minify.css
+```
+
+#### Minify 되기 전 [CSS파일](./src/css/Minify.css)
+---
+```css
+body{
+
+}
+h1{
+    color: tomato;
+}
+```
+#### Minify 된 후 [CSS파일](./src/css/Minify.min.css)
+---
+```css
+h1{color:tomato}
+```
