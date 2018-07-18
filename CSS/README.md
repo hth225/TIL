@@ -500,9 +500,7 @@ cleancss -o Minify.min.css Minify.css
 #### Minify 되기 전 [CSS파일](./src/css/Minify.css)
 ---
 ```css
-body{
-
-}
+body{}
 h1{
     color: tomato;
 }
@@ -512,3 +510,21 @@ h1{
 ```css
 h1{color:tomato}
 ```
+---
+## Preprocessor
+### CSS 뛰어넘기 - Preprocessor
+- stylesheets는 갈 수록 커지고, 복잡해지며, 유지보수하기 힘들어 지고 있는데 이것을 preprocessor 가 도울 수 있다
+- CSS에서 지원하지 않았던 기능들을 사용할 수 있다
+- 해당하는 Preprocessor 의 문법에 따라 코드를 작성하면 해당하는 코드에 대한 CSS코드가 생성됨
+
+#### Preprocessors
+1. [Stylus](http://stylus-lang.com/)
+2. [Sass](http://sass-lang.com/)
+
+#### Syntax
+
+```cmd
+stylus -w ./css/stylus.styl -o ./css/stylus.css
+```
+- stylus.styl 파일을 감시하며 변경점이 있을 때 마다 컴파일 하여 stylus.css 파일로 내보냄
+- [Stylus CLI command](http://stylus-lang.com/docs/executable.html)를 참고하여 cli 환경에서 Stylus 컴파일
