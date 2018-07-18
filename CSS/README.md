@@ -540,5 +540,22 @@ stylus -w ./css/stylus.styl -o ./css/stylus.css
 1. Fontello 에서 원하는 폰트를 선택
 2. 선택한 폰트를 일괄 다운
 3. demo.html을 참고하여 폰트의 class 명을 참고
-4. html에서 i태그를 사용하여 class 값으로 해당하는 폰트의 class 명을 사용
+4. html에서 i태그를 사용하여 class 값으로 해당하는 [폰트의 class 명을 사용](./src/Ex_Fontello.html)
 
+### 원리
+> css 에서는 ::before, ::after 라는 특수한 선택자를 사용해서 컨텐츠를 시각적으로만 앞 또는 뒤에 추가할 수 있다
+- 이 것을 이용하여 fontello.css 에서 아래와 같은 코드의 클래스 값에 해당하는 유니코드를 태그의 content로 주입하여 화면에 나타나게 한다
+- fontello.css를 참고해 보면, icon- 로 시작하는 모든 class에 대해 font-family를 fontello로 지정해주기 때문에 부가적으로 font-family를 지정해주지 않아도 아이콘이 나타나게 된다
+
+```html
+<i class="icon-paper-plane-empty"></i>
+```
+
+#### 아이콘 애니메이션
+```html
+<link rel="stylesheet" href="./fontello-49610773/css/animation.css">
+```
+- head 태그에 다음과 같은 link 태그를 추가하여 animation.css를 다운로드 하게 한 뒤
+- 원하는 태그에 animation.css 안에 선택되어 있는 animate-spin을 클래스에 추가하면 로딩 아이콘과 같이 회전하는 효과를 얻을 수 있다, [예제 참고](./src/Ex_Fontello_2.html)
+
+### Font 만들기
