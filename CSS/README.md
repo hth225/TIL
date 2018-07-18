@@ -559,3 +559,7 @@ stylus -w ./css/stylus.styl -o ./css/stylus.css
 - 원하는 태그에 animation.css 안에 선택되어 있는 animate-spin을 클래스에 추가하면 로딩 아이콘과 같이 회전하는 효과를 얻을 수 있다, [예제 참고](./src/Ex_Fontello_2.html)
 
 ### Font 만들기
+- SVG 포맷으로 만들기 때문에 [Thenounproject](https://thenounproject.com/)와 같은 사이트에서 구해서 사용
+- 다운로드 받고 Fontello 에 업로드 하면 Fontello 에서 웹 폰트로 만들어주기 때문에 앞서 Fontello를 이용했던 과정과 같이 사용할 수 있다
+- Fontello의 경우 계정관리가 없기 때문에 이전에 선택했던 것들은 Settings > Import 를 통해 config.json 을 import 함으로써 다시 불러올 수 있다
+- 또한, CSS Prefix 를 설정할 수 있어 custom prefix를 사용함으로써 혹시 icon- 을 사용하고 있는 경우에 대비할 수 있다
