@@ -1,16 +1,18 @@
 # JavaScript
 자바스크립트 학습
 ## Index
-> - [Number Guessing Game](Number-Guessing/README.md)
-
----
-### JS의 비교 연산자
-![JS_comp](Number-Guessing/IMG/JS_comp.png)
-> [출처 : MDN WEB DOCS(자바스크립트 기초)](https://developer.mozilla.org/ko/docs/Learn/JavaScript/First_steps/A_first_splash)
-
-
-![DIFF](Number-Guessing/IMG/Op_diff.png)
-> 같음 연산자와 항등 연산자의 차이
-
-> [출처 : MSDN](https://msdn.microsoft.com/ko-kr/library/ky6fyhws(v=vs.94).aspx)
-
+1. [Scope](./scope.md)
+2. [String]()
+3. [Array]()
+4. [실습1. 특정 문자열이 포함된 배열 반환]()
+5. [Object]()
+6. [Destructing]()
+7. [Set & WeakSet]()
+8. [Map & WeakMap]()
+9. [실습2. Destrcturing과 Set을 활용한 로또번호 생성기]()
+10. [Template]()
+11. [Function]()
+12. [객체]()
+13. [Module]()
+14. [Proxy]()
+15. [미니프로젝트]()
