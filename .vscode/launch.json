@@ -8,7 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "프로그램 시작",
-            "program": "${workspaceFolder}/JavaScript\\Number-Guessing\\js\\main.js"
+            "program": "${workspaceFolder}/JavaScript/src/Ex_let.js"
         }
     ]
 }
