@@ -5,5 +5,9 @@
   "main": "index.js",
   "repository": "https://github.com/hth225/TIL.git",
   "author": "hth225 <hth225@naver.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./JavaScript/TypeScript/BlockChain/src/index.js",
+    "prestart": "tsc"
+  }
 }
