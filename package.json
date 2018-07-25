@@ -7,7 +7,9 @@
   "author": "hth225 <hth225@naver.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node ./JavaScript/TypeScript/BlockChain/src/index.js",
-    "prestart": "tsc"
+    "start": "tsc-watch --onSuccess \" node /JavaScript/TypeScript/BlockChain/dist/index.js\" "
+  },
+  "devDependencies": {
+    "tsc-watch": "^1.0.26"
   }
 }

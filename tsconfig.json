@@ -2,8 +2,9 @@
     "compilerOptions": {
         "module": "commonjs",
         "target": "ES2015",
-        "sourceMap": true
+        "sourceMap": true,
+        "outDir": "./JavaScript/TypeScript/BlockChain/dist"
     },
-    "include": ["./Javascript/TypeScript/BlockChain/src/index.ts"],
+    "include": ["./Javascript/TypeScript/BlockChain/src/**/*"],
     "exclude": ["node_modules"]
 }
