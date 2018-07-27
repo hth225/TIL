@@ -111,3 +111,34 @@ export default App;
 
 ![andOp](./img/andOperator.png)
 - and 연산자를 사용해서 조건부 렌더링이 가능하다
+
+## JSX에서 CSS 스타일과 Class 사용하는 방법
+```jsx
+const style = {
+    backgroundColor: 'black',
+    padding: '16px',
+    color:'white',
+    fontSize: '16px'
+};
+```
+- 다음과 같이 객체형태로 스타일을 만든다
+- background-color와 같이 - 가 필요한 경우 카멜표기법을 사용해 backgroundColor로 작성하면 된다
+
+```jsx
+<div>
+    <div style={style}>Hello LAD</div>
+</div>
+```
+- 다음과 같이 사용하면 스타일을 적용할 수 있다
+
+### Class
+- React에서는 className이라고 명시를 해줘야 한다 (class로 작성해도 작동은 하나, className이 올바른 컨벤션이다)
+```jsx
+<div className="App"></div>
+```
+
+## 주석
+- 일반적으로 자바스크립트에서 하던 주석은 그대로 렌더링 되어버림
+- 멀티라인의 경우 중괄호로 감싸주면 된다
+
+![comment](./img/comment.png)
