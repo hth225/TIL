@@ -68,4 +68,18 @@ const MyName = ({ Name }) => {
 
 ## state를 사용하는 방법
 ### state?
-- component 자기 자신이 들고 있다가 변경이 필요할 때 setState() 함수를 통해서 변경함
+- component 내부에 있고 변경이 필요할 때 반드시 setState() 함수를 통해서 변경함
+- [예제](./src/Counter.js)에서는 버튼을 통해서 number 값이 바뀌는 경우를 설명한다
+
+```jsx
+render() {
+    return (
+        <div>
+        <h1>Counter</h1>
+        <div> value : {this.state.number}</div>
+        <button onClick={this.handleIncrease}>+</button>
+        <button onClick={this.handleDecrease}>-</button>
+        </div>
+    );
+}
+```
