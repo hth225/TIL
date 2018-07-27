@@ -5,7 +5,7 @@
 
 ## Index
 1. [What is React?](./WhatIsReact.md)
-2. [Starting React Project]()
+2. [Starting React Project](./StartingReactProject.md)
 3. [JSX]()
 4. [Props and state]()
 5. [LifeCycle API]()
