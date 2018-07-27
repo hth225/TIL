@@ -4,7 +4,7 @@
 - inflearn 의 [React](https://www.inflearn.com/course/react-velopert/)강좌를 보고 정리
 
 ## Index
-1. [What is React?]()
+1. [What is React?](./WhatIsReact.md)
 2. [Starting React Project]()
 3. [JSX]()
 4. [Props and state]()
