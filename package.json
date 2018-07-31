@@ -6,9 +6,7 @@
   "repository": "https://github.com/hth225/TIL.git",
   "author": "hth225 <hth225@naver.com>",
   "license": "MIT",
-  "scripts": {
-    "start": "tsc-watch --onSuccess \" node /JavaScript/TypeScript/BlockChain/dist/index.js\" "
-  },
+  
   "devDependencies": {
     "tsc-watch": "^1.0.26"
   }
