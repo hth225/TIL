@@ -10,6 +10,6 @@
 4. [Props and state](./PropsAndState.md)
 5. [LifeCycle API](./LifeCycleAPI.md)
 6. [Setting up React Environment](./SettingUpEnv.md)
-7. [Manage input status]()
+7. [Manage input status](./ManageInputStatus.md)
 8. [Render Array data and management]()
 9. [Optimization, Utilize, Ref]()
