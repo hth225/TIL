@@ -2,8 +2,8 @@ import React, { Component } from "react";
 
 class PhoneForm extends Component {
   state = {
-    name: '',
-    phone: ''
+    name: "",
+    phone: ""
   };
 
   handleChange = e => {
@@ -16,9 +16,9 @@ class PhoneForm extends Component {
     e.preventDefault();
     this.props.onCreate(this.state);
     this.setState({
-        name: '',
-        phone: '',
-    })
+      name: "",
+      phone: ""
+    });
   };
 
   render() {
@@ -38,7 +38,7 @@ class PhoneForm extends Component {
         />
         <button type="submit">등록</button>
       </form>
-    ); 
+    );
   }
 }
 
