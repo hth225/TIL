@@ -62,9 +62,13 @@ this.setState({
 
 > e.g. filter
 > ![filter](./img/filter.png)
+
 - 함수를 사용해 보다 편하게 범위를 지정할 수 있음
 
 ## 배열에서 데이터 수정
 
 - slice 함수 혹은 map 함수를 사용할 수 있다
-- 
+- slice 함수를 통해 범위를 지정할 수도 있다
+- map 함수를 통해서 특정 조건이 부합할 때 만 해당되도록 지정할 수 있다
+
+![editing](./img/slice_map.png)
