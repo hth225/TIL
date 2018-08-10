@@ -11,5 +11,5 @@
 5. [LifeCycle API](./LifeCycleAPI.md)
 6. [Setting up React Environment](./SettingUpEnv.md)
 7. [Manage input status](./ManageInputStatus.md)
-8. [Render Array data and management]()
-9. [Optimization, Utilize, Ref]()
+8. [Render Array data and management](./RenderArrayDTandManage.md)
+9. [Optimization, Utilize, Ref](./OptimizationUtilRef.md)
