@@ -25,3 +25,15 @@ shouldComponentUpdate(nextProps, nextState) {
 > 
 >[IMMUTABLE](https://facebook.github.io/immutable-js/)
 >, [Immer](https://github.com/mweststrate/immer)
+
+## Ref
+- Dom에 직접적으로 접근
+- 함수를 이용하는 방법
+  - ref를 parameter로 받아서 이 component의 member변수로 ref 값을 넣어주는 작업
+- 다른 방법
+  - input 값을 null 대신 React.CreateRef(); 로 준다
+  - 해당하는 DOM에서 ref값을 {this.input}으로 넘겨준다
+  - 값을 넘기는 로직에서 this.input.focus(); 를 this.input.current.focus(); 로 변경한다
+  - React 16.3이상의 버전에서만 가능함
+- focus를 준다던가, 특정DOM의 크기를 가져오거나, 스크롤 위치를 가져와야 하는 경우 등 DOM에 직접적으로 접근이 꼭 필요할 때 사용함
+- 추가적으로, 외부 Library와 연동할 경우 사용함(차트관련 Library 등)

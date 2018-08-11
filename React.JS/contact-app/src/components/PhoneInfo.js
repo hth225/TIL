@@ -18,6 +18,7 @@ class PhoneInfo extends Component {
     const { info, onRemove } = this.props;
     onRemove(info.id);
   };
+  
   handleToggleEdit = () => {
     const { info, onUpdate } = this.props;
     if (this.state.editing) {
