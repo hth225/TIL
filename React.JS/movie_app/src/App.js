@@ -25,6 +25,19 @@ const movies = [
 ]
 
 class App extends Component {
+  // React LifeCycle
+  // render : componentWillMount() -> render() -> componentDidMount()
+  // Update : componentWillReceiveProps() -> shouldComponentUpdate() -> componentWillUpdate() -> render() -> componentDidUpdate()
+
+  componentWillMount(){
+    // Will request data to api
+
+  }
+
+  componentDidMount(){
+    
+  }
+
   render() {
     return (
       <div className="App">
