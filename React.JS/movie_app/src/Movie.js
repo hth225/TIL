@@ -13,7 +13,7 @@ class Movie extends Component {
     render() {
         return (
             <div>
-                <MoviePoster poster={this.props.poster}/>
+                <MoviePoster poster={this.props.poster} title={this.props.title}/>
                 <h1>{this.props.title}</h1>
             </div>
         );
@@ -23,12 +23,13 @@ class Movie extends Component {
 class MoviePoster extends Component {
 
     static propTypes = {
+        title: PropTypes.string.isRequired,
         poster: PropTypes.string.isRequired
     }
     render() {
         
         return(
-            <img src={this.props.poster} />
+            <img src={this.props.poster} alt={this.props.title}/>
         );
     }
 }
