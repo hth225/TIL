@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import "./Movie.css";
+import LineEllipsis from "react-lines-ellipsis";
 
 function Movie({ poster, title, genres, synopsis }) {
   return (
@@ -11,24 +12,29 @@ function Movie({ poster, title, genres, synopsis }) {
       <div className="Movie__Column">
         <h1>{title}</h1>
         <div className="Movie__Genres">
-            {genres.map((genre, index) => <MovieGenre genre={genre} key={index} />)}
+          {genres.map((genre, index) => (
+            <MovieGenre genre={genre} key={index} />
+          ))}
         </div>
         <p className="Movie__Synopsis">
-            {synopsis}
+          <LineEllipsis
+            text={synopsis}
+            maxLine="3"
+            ellipsis="..."
+            trimRight
+            basedOn="letters"
+          />
         </p>
-
       </div>
     </div>
   );
 }
-function MovieGenre({genre}){
-    return (
-        <span className="Movie__Genres">{genre}</span>
-    )
+function MovieGenre({ genre }) {
+  return <span className="Movie__Genre">{genre}</span>;
 }
 
 function MoviePoster({ alt, poster }) {
-  return <img src={poster} alt={alt} title={alt} className="Movie__Poster"/>;
+  return <img src={poster} alt={alt} title={alt} className="Movie__Poster" />;
 }
 Movie.propTypes = {
   title: PropTypes.string.isRequired,
@@ -38,10 +44,9 @@ Movie.propTypes = {
 };
 MoviePoster.propTypes = {
   alt: PropTypes.string.isRequired,
-  poster: PropTypes.string.isRequired,
-  
+  poster: PropTypes.string.isRequired
 };
 MovieGenre.propTypes = {
-    genre: PropTypes.string.isRequired,
-}
+  genre: PropTypes.string.isRequired
+};
 export default Movie;
