@@ -93,3 +93,28 @@ const PErrorMakers = BoundaryHOC(ErrorMaker);
 ```
 
 - 감싸준 component 를 applicaion 에서 렌더링 함
+
+## setStatenull
+
+- State 를 null 로 세팅 함으로써 component 를 update 하는 process 이다
+- Component 를 언제 Update 할지 결정할 수 있게 해줌
+- state 가 null 이 되어 component 의 update 가 중지되는 예제
+
+```jsx
+const eatPizza = (state, props) => {
+  const { pizzas } = state;
+  if (pizzas < MAX_PIZZAS) {
+    return {
+      pizzas: pizzas + 1
+    };
+  } else {
+    return null;
+  }
+};
+
+_handleClick = () => {
+  this.setState(eatPizza);
+};
+```
+
+- MAX_PIZZAS 에 도달하면 더 이상 pizzas 값을 update 하지 않음
