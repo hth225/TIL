@@ -57,3 +57,39 @@ componentDidCatch = (error, info) => {
 ```
 
 - componentDidCatch() 를 통해서 에러를 구분하고 대응할 수 있다
+
+## Error boundaries w/ high Order Components
+
+- 모든 render statement 마다 true false 를 통해서 에러를 잡는것은 비효율적임
+- 그래서 High Order Component (HOC)을 사용함
+- 이를 통해 원하는 모든 component 를 보호할 수 있다
+
+```jsx
+const BoundaryHOC = ProptectedComponent =>
+  class Boundary extends Component {
+    state = {
+      hasError: false
+    };
+    componentDidCatch = () => {
+      this.setState({
+        hasError: true
+      });
+    };
+    render() {
+      const { hasError } = this.state;
+      if (hasError) {
+        return <ErrorFallback />;
+      } else {
+        return <ProptectedComponent />;
+      }
+    }
+  };
+```
+
+- 다음과 같이 BoundaryHOC() 함수를 만들고 인자로 보호할 Component 를 다음과 같이 감싸준다
+
+```jsx
+const PErrorMakers = BoundaryHOC(ErrorMaker);
+```
+
+- 감싸준 component 를 applicaion 에서 렌더링 함
