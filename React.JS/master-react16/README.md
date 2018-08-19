@@ -41,3 +41,19 @@ const Message = () => "Just touched it!";
 ```
 
 - react-dom 안에 있는 createPortal 을 가져와서 리액트 루트 밖에 있는 touchme id 를 가진 element 에 접근하여 메세지를 렌더링
+
+## Error Boundaries
+
+```jsx
+state = {
+  hasError: false
+};
+componentDidCatch = (error, info) => {
+  console.log(`catched ${error} the info i have is ${JSON.stringify(info)}`);
+  this.setState({
+    hasError: true
+  });
+};
+```
+
+- componentDidCatch() 를 통해서 에러를 구분하고 대응할 수 있다
