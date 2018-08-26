@@ -38,14 +38,14 @@ class App extends Component {
 
   _callApi = () => {
     // promise는 첫 번째 작업이 끝나지 않아도 두 번째 작업을 수행함
-    return fetch("https://yts.am/api/v2/list_movies.json?sort_by=like_count")
+    return fetch("https://yts.am/api/v2/list_movies.json?sort_by=year")
       .then(response => response.json())
       .then(json => json.data.movies)
       .catch(err => console.log(err));
   };
 
   render() {
-    const { movies } = this.state;
+    const { movies } = this.stat;
     return (
       <div className={movies ? "App" : "App--loading"}>
         {movies ? this._renderMovies() : "Loading"}
