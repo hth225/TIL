@@ -1,22 +1,49 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 // import logo from './logo.svg';
 import "./App.css";
 import Movie from "./Movie";
+import Dropdown from "react-dropdown";
+
+const options = [
+  "title",
+  "year",
+  "rating",
+  "peers",
+  "seeds",
+  "download_count",
+  "like_count",
+  "date_added"
+];
 
 class App extends Component {
   // Component LifeCycle
   // render : componentWillMount() -> render() -> componentDidMount()
   // Update : componentWillReceiveProps() -> shouldComponentUpdate() -> componentWillUpdate() -> render() -> componentDidUpdate()
 
-  state = {};
+  constructor(props) {
+    super(props);
+    this.state = {
+      selected: "year",
+      update: false
+    };
+    this._onSelect = this._onSelect.bind(this);
+  }
 
   componentDidMount() {
     this._getMovies();
   }
 
+  // shouldComponentUpdate() {
+  //   if (this.state.update) {
+  //     return true;
+  //   } else {
+  //     return false;
+  //   }
+  // }
+
   _renderMovies = () => {
     const movies = this.state.movies.map(movie => {
-        return (
+      return (
         <Movie
           title={movie.title_long}
           poster={movie.medium_cover_image}
@@ -38,18 +65,36 @@ class App extends Component {
 
   _callApi = () => {
     // promise는 첫 번째 작업이 끝나지 않아도 두 번째 작업을 수행함
-    return fetch("https://yts.am/api/v2/list_movies.json?sort_by=year")
+    const movieOption = this.state.selected;
+    return fetch(
+      `https://yts.am/api/v2/list_movies.json?sort_by=${movieOption}`
+    )
       .then(response => response.json())
       .then(json => json.data.movies)
       .catch(err => console.log(err));
   };
 
+  _onSelect = options => {
+    this.setState({
+      selected: options,
+      update: true
+    });
+  };
+
   render() {
-    const { movies } = this.stat;
+    const { movies } = this.state;
     return (
-      <div className={movies ? "App" : "App--loading"}>
-        {movies ? this._renderMovies() : "Loading"}
-      </div>
+      <Fragment>
+        {/* <Dropdown
+          options={options}
+          onChange={this._onSelect}
+          value={this.state.selected}
+          placeholder="Select Sort options"
+        /> */}
+        <div className={movies ? "App" : "App--loading"}>
+          {movies ? this._renderMovies() : "Loading"}
+        </div>
+      </Fragment>
     );
   }
 }
