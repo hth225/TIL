@@ -2,18 +2,20 @@ import React, { Component, Fragment } from "react";
 // import logo from './logo.svg';
 import "./App.css";
 import Movie from "./Movie";
-import Dropdown from "react-dropdown";
+import Search from "react-search-box";
 
-const options = [
-  "title",
-  "year",
-  "rating",
-  "peers",
-  "seeds",
-  "download_count",
-  "like_count",
-  "date_added"
-];
+// import Dropdown from "react-dropdown";
+
+// const options = [
+//   "title",
+//   "year",
+//   "rating",
+//   "peers",
+//   "seeds",
+//   "download_count",
+//   "like_count",
+//   "date_added"
+// ];
 
 class App extends Component {
   // Component LifeCycle
@@ -24,13 +26,15 @@ class App extends Component {
     super(props);
     this.state = {
       selected: "year",
-      update: false
+      update: false,
+      searchData: []
     };
-    this._onSelect = this._onSelect.bind(this);
+    // this._onSelect = this._onSelect.bind(this);
   }
 
   componentDidMount() {
     this._getMovies();
+    this._getSearchData();
   }
 
   // shouldComponentUpdate() {
@@ -65,24 +69,37 @@ class App extends Component {
 
   _callApi = () => {
     // promise는 첫 번째 작업이 끝나지 않아도 두 번째 작업을 수행함
-    const movieOption = this.state.selected;
+    const { selected } = this.state;
     return fetch(
-      `https://yts.am/api/v2/list_movies.json?sort_by=${movieOption}`
+      `https://yts.am/api/v2/list_movies.json?sort_by=${selected}?limit=30`
     )
       .then(response => response.json())
       .then(json => json.data.movies)
       .catch(err => console.log(err));
   };
 
-  _onSelect = options => {
-    this.setState({
-      selected: options,
-      update: true
-    });
+  // _onSelect = options => {
+  //   this.setState({
+  //     selected: options,
+  //     update: true
+  //   });
+  // };
+
+  _getSearchData = () => {
+    const { movies } = this.state;
+    const data = movies.map(movie => {
+      this.setState({
+        searchData: movie.title_long
+      });
+      return data
+    })
+    
   };
+
 
   render() {
     const { movies } = this.state;
+
     return (
       <Fragment>
         {/* <Dropdown
