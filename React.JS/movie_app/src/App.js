@@ -34,7 +34,7 @@ class App extends Component {
 
   componentDidMount() {
     this._getMovies();
-    this._getSearchData();
+    // this._getSearchData();
   }
 
   // shouldComponentUpdate() {
@@ -71,7 +71,7 @@ class App extends Component {
     // promise는 첫 번째 작업이 끝나지 않아도 두 번째 작업을 수행함
     const { selected } = this.state;
     return fetch(
-      `https://yts.am/api/v2/list_movies.json?sort_by=${selected}?limit=30`
+      `https://yts.am/api/v2/list_movies.json?limit=30?sort_by=${selected}`
     )
       .then(response => response.json())
       .then(json => json.data.movies)
@@ -87,15 +87,25 @@ class App extends Component {
 
   _getSearchData = () => {
     const { movies } = this.state;
-    const data = movies.map(movie => {
-      this.setState({
-        searchData: movie.title_long
-      });
-      return data
-    })
-    
+    console.log(typeof movies);
+    // const data = movies.map(movie => {
+    //   this.setState({
+    //     searchData: movie.title_long
+    //   });
+    //   return data
+    // })
   };
 
+  onChangeSearchInput(event) {
+    const searchKeyword = event.target.value;
+    const { movies } = this.state;
+    const searchResultList = movies.filter(movie =>
+      movie.title_long.includes(searchKeyword)
+    );
+
+    this.setState({ searchData: searchResultList });
+    console.log(this.state.searchData);
+  }
 
   render() {
     const { movies } = this.state;
@@ -108,6 +118,7 @@ class App extends Component {
           value={this.state.selected}
           placeholder="Select Sort options"
         /> */}
+        <input className="SearchBox" onChange={this.onChangeSearchInput.bind(this)} placeholder="Search"/>
         <div className={movies ? "App" : "App--loading"}>
           {movies ? this._renderMovies() : "Loading"}
         </div>
