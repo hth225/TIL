@@ -104,7 +104,6 @@ class App extends Component {
     );
 
     this.setState({ searchData: searchResultList });
-    console.log(this.state.searchData);
   }
 
   render() {
@@ -118,7 +117,11 @@ class App extends Component {
           value={this.state.selected}
           placeholder="Select Sort options"
         /> */}
-        <input className="SearchBox" onChange={this.onChangeSearchInput.bind(this)} placeholder="Search"/>
+        <input
+          className="SearchBox"
+          onChange={this.onChangeSearchInput.bind(this)}
+          placeholder="Search"
+        />
         <div className={movies ? "App" : "App--loading"}>
           {movies ? this._renderMovies() : "Loading"}
         </div>
