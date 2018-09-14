@@ -2,7 +2,6 @@ import React, { Component, Fragment } from "react";
 // import logo from './logo.svg';
 import "./App.css";
 import Movie from "./Movie";
-import Search from "react-search-box";
 
 // import Dropdown from "react-dropdown";
 
@@ -29,24 +28,14 @@ class App extends Component {
       update: false,
       searchData: []
     };
-    // this._onSelect = this._onSelect.bind(this);
   }
 
   componentDidMount() {
     this._getMovies();
-    // this._getSearchData();
   }
 
-  // shouldComponentUpdate() {
-  //   if (this.state.update) {
-  //     return true;
-  //   } else {
-  //     return false;
-  //   }
-  // }
-
   _renderMovies = () => {
-    const movies = this.state.movies.map(movie => {
+    const movies = this.state.searchData.map(movie => {
       return (
         <Movie
           title={movie.title_long}
@@ -63,7 +52,8 @@ class App extends Component {
   _getMovies = async () => {
     const movies = await this._callApi();
     this.setState({
-      movies
+      movies,
+      searchData: movies
     });
   };
 
@@ -71,29 +61,11 @@ class App extends Component {
     // promise는 첫 번째 작업이 끝나지 않아도 두 번째 작업을 수행함
     const { selected } = this.state;
     return fetch(
-      `https://yts.am/api/v2/list_movies.json?limit=30?sort_by=${selected}`
+      `https://yts.am/api/v2/list_movies.json?sort_by=${selected}`
     )
       .then(response => response.json())
       .then(json => json.data.movies)
       .catch(err => console.log(err));
-  };
-
-  // _onSelect = options => {
-  //   this.setState({
-  //     selected: options,
-  //     update: true
-  //   });
-  // };
-
-  _getSearchData = () => {
-    const { movies } = this.state;
-    console.log(typeof movies);
-    // const data = movies.map(movie => {
-    //   this.setState({
-    //     searchData: movie.title_long
-    //   });
-    //   return data
-    // })
   };
 
   onChangeSearchInput(event) {
@@ -102,7 +74,7 @@ class App extends Component {
     const searchResultList = movies.filter(movie =>
       movie.title_long.includes(searchKeyword)
     );
-
+    console.log(searchResultList);
     this.setState({ searchData: searchResultList });
   }
 
