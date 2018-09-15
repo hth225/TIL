@@ -2,8 +2,9 @@ import React, { Component, Fragment } from "react";
 // import logo from './logo.svg';
 import "./App.css";
 import Movie from "./Movie";
-
 // import Dropdown from "react-dropdown";
+
+const apiKey = "5b63cc9878d79b776810b4c9b85ee615";
 
 // const options = [
 //   "title",
@@ -24,7 +25,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      selected: "year",
+      selected: "popularity.desc",
       update: false,
       searchData: []
     };
@@ -38,11 +39,11 @@ class App extends Component {
     const movies = this.state.searchData.map(movie => {
       return (
         <Movie
-          title={movie.title_long}
-          poster={movie.medium_cover_image}
+          title={movie.title}
+          poster={`https://image.tmdb.org/t/p/w1280/${movie.poster_path}`}
           key={movie.id}
-          genres={movie.genres}
-          synopsis={movie.synopsis}
+          genres={movie.genre_ids}
+          synopsis={movie.overview}
         />
       );
     });
@@ -51,20 +52,23 @@ class App extends Component {
 
   _getMovies = async () => {
     const movies = await this._callApi();
+    const genres = await this._callGrenreApi();
     this.setState({
       movies,
-      searchData: movies
+      searchData: movies,
+      genres
     });
+    console.log(this.state.movies)
   };
 
   _callApi = () => {
     // promise는 첫 번째 작업이 끝나지 않아도 두 번째 작업을 수행함
     const { selected } = this.state;
     return fetch(
-      `https://yts.am/api/v2/list_movies.json?sort_by=${selected}`
+      `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&language=ko-KR&sort_by=${selected}&include_adult=true&include_video=false&page=1`
     )
       .then(response => response.json())
-      .then(json => json.data.movies)
+      .then(json => json.results)
       .catch(err => console.log(err));
   };
 
@@ -72,11 +76,20 @@ class App extends Component {
     const searchKeyword = event.target.value;
     const { movies } = this.state;
     const searchResultList = movies.filter(movie =>
-      movie.title_long.includes(searchKeyword)
+      movie.title.includes(searchKeyword) || movie.original_title.includes(searchKeyword)
     );
     console.log(searchResultList);
     this.setState({ searchData: searchResultList });
   }
+
+  _callGrenreApi = () => {
+    return fetch(
+      `https://api.themoviedb.org/3/genre/movie/list?api_key=${apiKey}&language=en-US`
+    )
+      .then(response => response.json())
+      .then(json => json.genres)
+      .catch(err => console.log(err));
+  };
 
   render() {
     const { movies } = this.state;
