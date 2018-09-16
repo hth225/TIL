@@ -52,13 +52,10 @@ class App extends Component {
 
   _getMovies = async () => {
     const movies = await this._callApi();
-    const genres = await this._callGrenreApi();
     this.setState({
       movies,
       searchData: movies,
-      genres
     });
-    console.log(this.state.movies)
   };
 
   _callApi = () => {
@@ -78,18 +75,8 @@ class App extends Component {
     const searchResultList = movies.filter(movie =>
       movie.title.includes(searchKeyword) || movie.original_title.includes(searchKeyword)
     );
-    console.log(searchResultList);
     this.setState({ searchData: searchResultList });
   }
-
-  _callGrenreApi = () => {
-    return fetch(
-      `https://api.themoviedb.org/3/genre/movie/list?api_key=${apiKey}&language=en-US`
-    )
-      .then(response => response.json())
-      .then(json => json.genres)
-      .catch(err => console.log(err));
-  };
 
   render() {
     const { movies } = this.state;

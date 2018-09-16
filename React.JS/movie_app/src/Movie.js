@@ -2,7 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./Movie.css";
 import LineEllipsis from "react-lines-ellipsis";
-
 function Movie({ poster, title, genres, synopsis }) {
   return (
     <div className="Movie">
@@ -32,6 +31,16 @@ function Movie({ poster, title, genres, synopsis }) {
 function MovieGenre({ genre }) {
   return <span className="Movie__Genre">{genre}</span>;
 }
+// _genreGenerator = () => {
+//   const {movies, genres} = this.state;
+//   console.log(genres);
+//   const genreVal = movies.map(movie => {movie.genre_ids})
+//   console.log(movies);
+//   console.log(movies.find(movie => {movie.genre_ids.includes(genres.id)}));
+//   console.log(genres);
+//   const genreText = movies.filter(movie => movie.genre_ids.includes(genres.id))
+//   console.log(genreText)
+// }
 
 function MoviePoster({ alt, poster }) {
   return <img src={poster} alt={alt} title={alt} className="Movie__Poster" />;

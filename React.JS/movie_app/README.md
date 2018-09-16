@@ -11,3 +11,8 @@
 - movies에 받아온 데이터를 토대로, 기본값을 this.state.searchDate에 세팅
 - 검색창이 비었을 경우 기본값(모든 영화목록)을 렌더링함
 - 기존의 yts보다 정보가 많은 [The Movie DB](https://www.themoviedb.org/)의 api로 변경하는 방안 계획
+
+#### 18.09.16
+- api를 [영화관 입장권 통합 전산망](http://www.kobis.or.kr/kobisopenapi/homepg/apiservice/searchServiceInfo.do)에서 제공하는 open api로 변경하기로 함
+- genreGenerator 삭제
+- genreApiCall 삭제
