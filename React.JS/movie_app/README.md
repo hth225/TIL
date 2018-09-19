@@ -16,3 +16,7 @@
 - api를 [영화관 입장권 통합 전산망](http://www.kobis.or.kr/kobisopenapi/homepg/apiservice/searchServiceInfo.do)에서 제공하는 open api로 변경하기로 함
 - genreGenerator 삭제
 - genreApiCall 삭제
+
+#### 18.09.19
+- api 변경X
+- 장르 표시 고려 or 연령대 표시등 다른 정보 표시 방안
