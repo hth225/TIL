@@ -56,6 +56,7 @@ class App extends Component {
       movies,
       searchData: movies,
     });
+    console.log(this.state.movies)
   };
 
   _callApi = () => {
